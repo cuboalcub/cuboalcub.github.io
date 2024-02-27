@@ -1,0 +1,23 @@
+h1{
+    color: rgb(255, 127, 127);
+    text-align: center;
+    text-decoration: solid;
+}
+body{
+    background-color: rgb(32, 34, 95);
+}
+a{
+    color: rgb(255, 127, 127);
+    text-decoration: none;
+    font-size: 20px;
+}
+#proyectos{
+    color: rgb(255, 127, 127);
+    text-align: center;
+    text-decoration: solid;
+    background-color: rgba(57, 0, 0, 0.651);
+    padding: auto;
+}
+lu{
+    text-decoration: none;
+}
