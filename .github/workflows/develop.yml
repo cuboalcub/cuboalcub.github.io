@@ -57,7 +57,7 @@ jobs:
         run: docker commit --change "ENV MODEL_NAME ${{secrets.MODEL_NAME}}" serving_base cv
 
       - name: show docker images
-        run: docker images
+        run:  docker images
 
       - name: Docker push
         run: docker push cv
