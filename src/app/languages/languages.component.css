@@ -1,0 +1,15 @@
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.tags .tag {
+    background-color: #56c8d8; /* Color similar al de las etiquetas en la imagen */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
