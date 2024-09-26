@@ -1,0 +1,9 @@
+mat-card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+mat-card{
+    background-color: transparent;
+    color: black;
+}

@@ -1,0 +1,37 @@
+.work-experience {
+    background-color:transparent;
+    color: black;
+}
+div{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+}
+li{
+    margin: 5px 0;
+    padding: 7px;
+    color: black;
+    width: 80%;
+    list-style: none;
+    background: transparent;
+}
+ul.card-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul.card-list li {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  mat-card-subtitle{
+    background-color: transparent;
+    color: black;
+  }
+  
+
