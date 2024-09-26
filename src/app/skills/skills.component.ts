@@ -10,5 +10,4 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
-
 }

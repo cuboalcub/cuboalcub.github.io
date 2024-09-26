@@ -3,13 +3,35 @@ h2 {
     margin-bottom: 15px;
     font-weight: bold;
 }
+
+mat-card {
+    background-color: transparent;
+    color: black;
+    width: 50%;
+    margin-bottom: 20px;   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 .tags .tag {
     background-color: #56c8d8; /* Color similar al de las etiquetas en la imagen */
     color: white;
-    padding: 10px 15px;
+    padding: 10px ;
     border-radius: 20px;
     font-size: 14px;
     font-weight: bold;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+  }
+  
+  .tags .tag:hover {
+    background-color: #45b6c7;
+  }
+  
+  .tags .tag:not(:last-child) {
+    margin-right: 10px;
+  }
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
