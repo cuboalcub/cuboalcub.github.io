@@ -1,0 +1,25 @@
+/* Estilo para el app-header */
+app-header {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los elementos de la tabla */
+table {
+    width: 100%;
+    border-collapse: separate; /* Esto permite separar las celdas */
+    border-spacing: 20px; /* Controla el espacio entre las celdas */
+}
+
+/* Estilo para los componentes app-work-experience y app-skills */
+td {
+    vertical-align: top;
+    padding: 10px;
+    width: 50%;
+}
+
+/* Estilo para el router-outlet */
+router-outlet {
+    display: block;
+    margin-top: 20px;
+}
