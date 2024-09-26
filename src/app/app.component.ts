@@ -5,10 +5,11 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { LanguagesComponent } from './languages/languages.component';
+import { LogorsComponent } from './logors/logors.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, WorkExperienceComponent, SkillsComponent, EducationComponent,LanguagesComponent],
+  imports: [RouterOutlet, HeaderComponent, WorkExperienceComponent, SkillsComponent, EducationComponent,LanguagesComponent,LogorsComponent],
 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
