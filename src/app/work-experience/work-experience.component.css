@@ -6,7 +6,6 @@ div{
     width: 100%;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: transparent;
 }
 li{
@@ -14,6 +13,8 @@ li{
     padding: 7px;
     color: black;
     width: 80%;
+    list-style: none;
+    background: transparent;
 }
 ul.card-list {
     list-style-type: none;
@@ -26,6 +27,11 @@ ul.card-list {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
+  }
+
+  mat-card-subtitle{
+    background-color: transparent;
+    color: black;
   }
   
 

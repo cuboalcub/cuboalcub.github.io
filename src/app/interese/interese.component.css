@@ -1,4 +1,11 @@
-mat-card-title {
+li{
+    margin: 5px 0;
+    padding: 7px;
+    color: black;
+    width: 80%;
+    list-style: none;
+}
+mat-card-title{
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: bold;
