@@ -30,20 +30,20 @@ export default function AboutPage() {
                         </h1>
                         <div className="mt-6 prose prose-indigo prose-lg text-gray-500 dark:text-gray-400">
                             <p>
-                                Hola, soy {profile.name}, un {profile.title} based in [Your Location].
+                                Hola, soy {profile.name}, un {profile.title}.
                             </p>
                             <p>
                                 {profile.bio}
                             </p>
                             <p>
-                                Me especializo en la creación de sitios web y aplicaciones de alta calidad utilizando herramientas modernas como React, Next.js, y Tailwind CSS.
-                                Mi viaje en el desarrollo web comenzó hace [Years] años, y he trabajado en una variedad de proyectos que van desde sitios web de pequeñas empresas hasta aplicaciones empresariales de gran escala.
+                                Me especializo en la creación de sitios web y aplicaciones para moviles  utilizando herramientas modernas como React,React Native, y Tailwind CSS.
+                                Mi viaje comenzó hace 2 años, y he trabajado en una variedad de proyectos que van desde sitios web de pequeñas empresas.
                             </p>
                             <h3>Skills</h3>
                             <ul>
-                                <li>Frontend: React, Next.js, Vue.js, Tailwind CSS, HTML5, CSS3</li>
-                                <li>Backend: Node.js, Express, PostgreSQL, MongoDB, Prisma</li>
-                                <li>Tools: Git, Docker, AWS, Vercel</li>
+                                <li>Frontend: React,React Native, Tailwind CSS, HTML5, CSS3, TypeScript</li>
+                                <li>Backend: Node.js, Python, Java, Express, PostgreSQL,Prisma, Django</li>
+                                <li>Tools: Git, Docker</li>
                             </ul>
                         </div>
                         <div className="mt-8">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Project } from '@/types';
 
 interface ProjectCardProps {
@@ -8,13 +9,15 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
         <div className="flex flex-col overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white dark:bg-gray-800">
-            <div className="flex-shrink-0">
-                <div className="h-48 w-full bg-gray-300 animate-pulse">
-                    {/* Replace with actual Image implementation when real images are available */}
-                    {/* <Image className="h-48 w-full object-cover" src={project.image} alt={project.title} width={300} height={200} /> */}
-                    <div className="flex items-center justify-center h-full text-gray-500">
-                        Image Placeholder
-                    </div>
+            <div className="shrink-0">
+                <div className="aspect-square w-full relative overflow-hidden">
+                    <Image
+                        className="object-contain transition-transform duration-500 hover:scale-105"
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
                 </div>
             </div>
             <div className="flex flex-1 flex-col justify-between p-6">
@@ -31,7 +34,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     <Link
                         href={`/projects/${project.slug}`}
                         className="text-base font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300">
-                        Read full story &rarr;
+                        Ver proyecto &rarr;
                     </Link>
                 </div>
             </div>

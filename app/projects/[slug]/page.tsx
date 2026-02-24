@@ -1,8 +1,8 @@
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
-
+import Image from "next/image";
+import Carousel from "@/components/Carousel";
 interface ProjectPageProps {
     params: Promise<{
         slug: string;
@@ -26,7 +26,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     return (
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center">
-                <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl md:text-5xl">
+                <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-dark sm:text-4xl md:text-5xl">
                     {project.title}
                 </h1>
                 <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
@@ -35,31 +35,27 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </div>
 
             <div className="mt-12">
-                <div className="aspect-w-16 aspect-h-9 rounded-xl bg-gray-200 dark:bg-gray-800 overflow-hidden shadow-2xl relative h-96 flex items-center justify-center">
-                    {/* Replace with actual Image when available */}
-                    {/* <Image 
-                src={project.image} 
-                alt={project.title} 
-                fill 
-                className="object-cover"
-                priority
-            /> */}
-                    <div className="text-gray-400">Project Image Placeholder</div>
-                </div>
+                {project.images && project.images.length > 0 ? (
+                    <Carousel images={project.images} />
+                ) : (
+                    <div className="aspect-square rounded-xl bg-gray-200 dark:bg-gray-800 overflow-hidden shadow-2xl relative flex items-center justify-center">
+                        <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
+                )}
             </div>
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="md:col-span-2 prose prose-indigo prose-lg text-gray-500 dark:text-gray-400">
-                    <h3 className="text-gray-900 dark:text-white">Overview</h3>
-                    <p>
-                        This is a placeholder for the full project description. In a real application,
-                        this content would likely come from a markdown file or a rich text field in a CMS.
-                        For now, we are displaying the summary again: {project.description}
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
+                    <h3 className="text-gray-900 dark:text-dark">{project.title}</h3>
+                    <div className="mt-4 space-y-4">
+                        {project.content}
+                    </div>
                 </div>
                 <div>
                     <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
@@ -97,7 +93,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </div>
             <div className="mt-16 border-t border-gray-200 dark:border-gray-700 pt-8">
                 <Link href="/projects" className="text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 flex items-center">
-                    &larr; Back to all projects
+                    &larr; Volver al portafolio
                 </Link>
             </div>
         </article>
