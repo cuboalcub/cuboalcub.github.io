@@ -36,7 +36,7 @@ export const projects: Project[] = [
         slug: "rc-app",
         image: "/rcp/1.png",
         images: ["/rcp/1.png", "/rcp/2.png", "/rcp/3.png", "/rcp/4.png", "/rcp/5.png"],
-        technologies: ["Angular", "TypeScript", "Tailwind CSS", "PostgreSQL", "Django"],
+        technologies: ["Angular", "TypeScript", "Tailwind CSS", "PostgreSQL", "Django", "Firebase"],
         github_front: "https://github.com/cuboalcub/RCP",
         github_back: "https://github.com/cuboalcub/API-Django",
         featured: true
