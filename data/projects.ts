@@ -33,7 +33,7 @@ export const projects: Project[] = [
         content: "Aplicación web orientada a la visualización de rutas críticas de proyectos." +
             "El sistema permite observar las actividades de un proyecto en forma de árbol, y resaltar la ruta crítica de un proyecto."
             + "durante el desarrollo de esta aplicació estuve en el rol de  desarrollo del backend y la logica del arbol de actividades y el diseño del arbol.",
-        slug: "rcp-app",
+        slug: "rc-app",
         image: "/rcp/1.png",
         images: ["/rcp/1.png", "/rcp/2.png", "/rcp/3.png", "/rcp/4.png", "/rcp/5.png"],
         technologies: ["Angular", "TypeScript", "Tailwind CSS", "PostgreSQL", "Django"],
