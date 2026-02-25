@@ -9,7 +9,8 @@ export interface Project {
     images?: string[];
     technologies: string[];
     link?: string;
-    github?: string;
+    github_front?: string;
+    github_back?: string;
     featured?: boolean;
 }
 
@@ -23,6 +24,6 @@ export interface Profile {
     name: string;
     title: string;
     bio: string;
-    avatar: string;
+    avatar?: string;
     socials: SocialLink[];
 }

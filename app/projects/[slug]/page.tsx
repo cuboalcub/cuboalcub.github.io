@@ -79,11 +79,19 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                                     </a>
                                 </div>
                             )}
-                            {project.github && (
+                            {project.github_front && (
                                 <div>
-                                    <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Source Code</h4>
-                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="mt-1 block text-indigo-600 hover:text-indigo-500 dark:text-indigo-400">
-                                        View on GitHub &rarr;
+                                    <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Código Fuente (Frontend)</h4>
+                                    <a href={project.github_front} target="_blank" rel="noopener noreferrer" className="mt-1 block text-indigo-600 hover:text-indigo-500 dark:text-indigo-400">
+                                        Código Fuente  &rarr;
+                                    </a>
+                                </div>
+                            )}
+                            {project.github_back && (
+                                <div>
+                                    <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Código Fuente (Backend)</h4>
+                                    <a href={project.github_back} target="_blank" rel="noopener noreferrer" className="mt-1 block text-indigo-600 hover:text-indigo-500 dark:text-indigo-400">
+                                        Código Fuente  &rarr;
                                     </a>
                                 </div>
                             )}

@@ -9,8 +9,8 @@ export default function Home() {
     <div className="space-y-16 pb-16">
       {/* Hero Section */}
       <section className="bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 lg:pr-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 flex flex-col items-center text-center">
+          <div className="max-w-3xl">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
               <span className="block xl:inline">Hola, soy {profile.name}</span>{' '}
               <span className="block text-indigo-600 xl:inline">{profile.title}</span>
@@ -18,7 +18,7 @@ export default function Home() {
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
               {profile.bio}
             </p>
-            <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+            <div className="mt-10 sm:flex sm:justify-center">
               <div className="rounded-md shadow">
                 <Link
                   href="/projects"
@@ -35,12 +35,6 @@ export default function Home() {
                   Contactarme
                 </Link>
               </div>
-            </div>
-          </div>
-          <div className="mt-12 lg:mt-0 lg:w-1/2">
-            {/* Placeholder for Hero Image */}
-            <div className="aspect-w-3 aspect-h-2 rounded-lg bg-gray-200 dark:bg-gray-800 flex items-center justify-center overflow-hidden shadow-xl">
-              <div className="text-gray-400">Hero Image Placeholder</div>
             </div>
           </div>
         </div>
